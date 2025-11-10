@@ -3,7 +3,9 @@
 import { HTMLAttributes } from 'react';
 import { cn } from '../../lib/utils';
 
-interface SkeletonProps extends HTMLAttributes<HTMLDivElement> {}
+interface SkeletonProps extends HTMLAttributes<HTMLDivElement> {
+  shimmer?: boolean;
+}
 
 export function Skeleton({ className, ...props }: SkeletonProps) {
   return (

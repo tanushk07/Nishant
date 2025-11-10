@@ -36,7 +36,7 @@ export class ErrorBoundary extends Component<Props, State> {
             Something went wrong
           </h2>
           <p className="text-gray-400 mb-4">{this.state.error?.message}</p>
-          <Button variant="danger" onClick={() => window.location.reload()}>
+          <Button onClick={() => window.location.reload()}>
             Retry
           </Button>
         </div>
